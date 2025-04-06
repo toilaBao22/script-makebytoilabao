@@ -1,3 +1,6 @@
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
 print("Make by Tôi là Bảo")
 _G.auto1 = false
 local game13 = Instance.new("TextButton")
@@ -24,7 +27,7 @@ local game12 = Instance.new("TextButton")
 local butdie = Instance.new("TextButton")
 local chest = game.workspace:FindFirstChild("Chest")
 local game14 = Instance.new("TextButton")
- 
+
 ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "ScreenGui"
 ScreenGui.ResetOnSpawn = false
@@ -42,7 +45,7 @@ Buttonchinh.Text = "Close"
 Buttonchinh.TextColor3 = Color3.fromRGB(0, 0, 0)
 Buttonchinh.TextSize = 14.000
 Buttonchinh.Draggable = true
- 
+
 frame1.Name = "frame1"
 frame1.Parent = ScreenGui
 frame1.Active = true
@@ -53,7 +56,7 @@ frame1.Position = UDim2.new(0.15415822, 0, 0.0624999516, 0)
 frame1.Size = UDim2.new(0, 283, 0, 446)
 frame1.Draggable = true
 frame1.Visible = false
- 
+
 menu1.Name = "menu1"
 menu1.Parent = frame1
 menu1.Active = true
@@ -62,7 +65,7 @@ menu1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 menu1.BorderSizePixel = 0
 menu1.Position = UDim2.new(0, 0, 0.175714329, 0)
 menu1.Size = UDim2.new(0, 282, 0, 367)
- 
+
 menugame.Name = "menu game"
 menugame.Parent = menu1
 menugame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -74,7 +77,7 @@ menugame.Font = Enum.Font.SourceSans
 menugame.Text = "menu"
 menugame.TextColor3 = Color3.fromRGB(0, 0, 0)
 menugame.TextSize = 14.000
- 
+
 frame2.Name = "frame2"
 frame2.Parent = ScreenGui
 frame2.Active = true
@@ -84,7 +87,7 @@ frame2.BorderSizePixel = 0
 frame2.Position = UDim2.new(0.400270462, 0, 0.0641025156, 0)
 frame2.Size = UDim2.new(0, 283, 0, 446)
 frame2.Draggable = true
- 
+
 frame2.Visible = false
 menu2.Name = "menu2"
 menu2.Parent = frame2
@@ -94,8 +97,8 @@ menu2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 menu2.BorderSizePixel = 0
 menu2.Position = UDim2.new(0, 0, 0.175714329, 0)
 menu2.Size = UDim2.new(0, 282, 0, 367)
- 
- 
+
+
 close2.Name = "close2"
 close2.Parent = menu2
 close2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -107,7 +110,7 @@ close2.Font = Enum.Font.SourceSans
 close2.Text = "close"
 close2.TextColor3 = Color3.fromRGB(0, 0, 0)
 close2.TextSize = 14.000
- 
+
 game1.Name = "game1"
 game1.Parent = menu2
 game1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -119,7 +122,7 @@ game1.Font = Enum.Font.SourceSans
 game1.Text = "game easy win obby land by Land Obbys"
 game1.TextColor3 = Color3.fromRGB(0, 0, 0)
 game1.TextSize = 14.000
- 
+
 frame3.Name = "frame3"
 frame3.Parent = ScreenGui
 frame3.Active = true
@@ -130,7 +133,7 @@ frame3.Position = UDim2.new(0.632183909, 0, 0.0608973876, 0)
 frame3.Size = UDim2.new(0, 283, 0, 446)
 frame3.Draggable = true
 frame3.Visible = false
- 
+
 menu3.Name = "menu3"
 menu3.Parent = frame3
 menu3.Active = true
@@ -139,7 +142,7 @@ menu3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 menu3.BorderSizePixel = 0
 menu3.Position = UDim2.new(0, 0, 0.175714329, 0)
 menu3.Size = UDim2.new(0, 282, 0, 367)
- 
+
 close3.Name = "close3"
 close3.Parent = menu3
 close3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -151,7 +154,7 @@ close3.Font = Enum.Font.SourceSans
 close3.Text = "close"
 close3.TextColor3 = Color3.fromRGB(0, 0, 0)
 close3.TextSize = 14.000
- 
+
 game11.Name = "game1.1"
 game11.Parent = menu3
 game11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -163,7 +166,7 @@ game11.Font = Enum.Font.SourceSans
 game11.Text = "auto fram"
 game11.TextColor3 = Color3.fromRGB(0, 0, 0)
 game11.TextSize = 14.000
- 
+
 game12.Name = "game1.2"
 game12.Parent = menu3
 game12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -175,7 +178,7 @@ game12.Font = Enum.Font.SourceSans
 game12.Text = "xóa part sai"
 game12.TextColor3 = Color3.fromRGB(0, 0, 0)
 game12.TextSize = 14.000
- 
+
 butdie.Name = "butdie"
 butdie.Parent = menu1
 butdie.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -187,7 +190,7 @@ butdie.Font = Enum.Font.SourceSans
 butdie.Text = "die"
 butdie.TextColor3 = Color3.fromRGB(0, 0, 0)
 butdie.TextSize = 14.000
- 
+
 game13.Name = "game1.3"
 game13.Parent = menu3
 game13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -199,7 +202,7 @@ game13.Font = Enum.Font.SourceSans
 game13.Text = "xóa vip door"
 game13.TextColor3 = Color3.fromRGB(0, 0, 0)
 game13.TextSize = 14.000
- 
+
 game14.Name = "game1.4"
 game14.Parent = menu3
 game14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -211,7 +214,7 @@ game14.Font = Enum.Font.SourceSans
 game14.Text = "xóa TunnelDoor"
 game14.TextColor3 = Color3.fromRGB(0, 0, 0)
 game14.TextSize = 14.000
- 
+
 local script = Instance.new('Script', Buttonchinh)
 local button = script.Parent
 local frame1 = button.Parent.frame1
@@ -224,45 +227,50 @@ button.MouseButton1Click:Connect(function()
 		button.Text = "Close"
 	end
 end)
- 
+
 local script = Instance.new('Script', menugame)
 local menugame = script.Parent
 local frame2 = menugame.Parent.Parent.Parent.frame2
 menugame.MouseButton1Click:Connect(function()
 	frame2.Visible = not frame2.Visible
 end)
- 
+
 local script = Instance.new('Script', close2)
 local close2 = script.Parent
 local frame2 = close2.Parent.Parent
 close2.MouseButton1Click:Connect(function()
 	frame2.Visible = false
 end)
- 
- 
+
+
 local script = Instance.new('Script', game1)
 local game1 = script.Parent
 local frame3 = game1.Parent.Parent.Parent.frame3
 game1.MouseButton1Click:Connect(function()
 	frame3.Visible = not frame3.Visible
 end)
- 
- 
+
+
 local script = Instance.new('Script', close3)
 local close3 = script.Parent
 local frame3 = close3.Parent.Parent
 close3.MouseButton1Click:Connect(function()
 	frame3.Visible = false
 end)
- 
+
 local script = Instance.new('Script', game11)
 local game11 = script.Parent
 game11.MouseButton1Click:Connect(function()
-	if _G.auto1 == false then
-		_G.auto1 = true
-	else
-		_G.auto1 = false
-	end
+
+		_G.auto1 = not _G.auto1
+	for i, part2 in pairs(workspace:FindFirstChild("_Chest1"):GetChildren()) do
+		part2.CanCollide = true
+		workspace.Chest.CanCollide = true
+		if _G.auto1 then
+		part2.CanCollide = not part2.CanCollide
+			workspace.Chest.CanCollide = not workspace.Chest.CanCollide 
+		end
+		end
 	local player = game.Players.LocalPlayer
 	local TweenService = game:GetService("TweenService")
 	local chest = workspace.Chest
@@ -273,14 +281,14 @@ game11.MouseButton1Click:Connect(function()
 	player.CharacterAdded:Connect(function(character)
 		local humanoidrootpart1 = character:WaitForChild("HumanoidRootPart")
 		local humanoid1 = character:WaitForChild("Humanoid")
- 
+
 		while _G.auto1 and humanoid1.Health > 0 do
 			moveToChest()
 			wait(0.5)
 		end
 	end)
 	if player.Character then
- 
+
 		local humanoid1 = player.Character:WaitForChild("Humanoid")
 		while _G.auto1 and humanoid1.Health > 0 do
 			moveToChest()
@@ -288,7 +296,7 @@ game11.MouseButton1Click:Connect(function()
 		end
 	end
 end)
- 
+
 local script = Instance.new('Script', game12)
 local game12 = script.Parent
 game12.MouseButton1Click:Connect(function()
@@ -300,19 +308,19 @@ game12.MouseButton1Click:Connect(function()
 		end
 	end
 end)
- 
+
 local script = Instance.new('Script', butdie)
- 
+
 local butdie = script.Parent
 butdie.MouseButton1Click:Connect(function()
 	humanoid.Health = 0
 end)
- 
+
 local script = Instance.new('Script', game13)
 game13.MouseButton1Click:Connect(function()
 	workspace.Essential.VipDoor:Destroy()
 end)
- 
+
 local script = Instance.new('Script', game14)
 game14.MouseButton1Click:Connect(function()
 	workspace.Essential.TunnelDoor:Destroy()
