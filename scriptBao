@@ -1,6 +1,3 @@
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
 print("Make by Tôi là Bảo")
 _G.auto1 = false
 local game13 = Instance.new("TextButton")
@@ -263,40 +260,28 @@ local game11 = script.Parent
 game11.MouseButton1Click:Connect(function()
 
 		_G.auto1 = not _G.auto1
-	for i, part2 in pairs(workspace:FindFirstChild("_Chest1"):GetChildren()) do
-		part2.CanCollide = true
 		workspace.Chest.CanCollide = true
 		if _G.auto1 then
-		part2.CanCollide = not part2.CanCollide
 			workspace.Chest.CanCollide = not workspace.Chest.CanCollide 
 		end
-		end
-	local player = game.Players.LocalPlayer
-	local TweenService = game:GetService("TweenService")
-	local chest = workspace.Chest
 	local function moveToChest()
 		local humanoidrootpart1 = player.Character:WaitForChild("HumanoidRootPart")
-		TweenService:Create(humanoidrootpart1, TweenInfo.new(1), { CFrame = chest.CFrame }):Play()
+		humanoidrootpart1.CFrame = workspace._Chest1:GetChildren()[2].CFrame
 	end
 	player.CharacterAdded:Connect(function(character)
 		local humanoidrootpart1 = character:WaitForChild("HumanoidRootPart")
-		local humanoid1 = character:WaitForChild("Humanoid")
-
-		while _G.auto1 and humanoid1.Health > 0 do
+		while _G.auto1 do
 			moveToChest()
-			wait(0.5)
+			wait(4)
 		end
 	end)
-	if player.Character then
-
-		local humanoid1 = player.Character:WaitForChild("Humanoid")
-		while _G.auto1 and humanoid1.Health > 0 do
+		if player.Character then
+		while _G.auto1 do
 			moveToChest()
-			wait(0.5)
+			wait(4)
 		end
 	end
-end)
-
+	end)
 local script = Instance.new('Script', game12)
 local game12 = script.Parent
 game12.MouseButton1Click:Connect(function()
