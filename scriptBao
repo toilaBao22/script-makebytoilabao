@@ -1,7 +1,4 @@
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-print("Make by Tôi là B")
+print("Make by Tôi là Bảo")
 _G.auto1 = false
 local game13 = Instance.new("TextButton")
 local player = game.Players.LocalPlayer
