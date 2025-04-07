@@ -1,4 +1,4 @@
-print("Make by Tôi là Bảo")
+`print("Make by Tôi là Bảo")
 _G.auto1 = false
 local game13 = Instance.new("TextButton")
 local player = game.Players.LocalPlayer
@@ -290,7 +290,8 @@ local script = Instance.new('Script', butdie)
 
 local butdie = script.Parent
 butdie.MouseButton1Click:Connect(function()
-	humanoid.Health = 0
+	local humanoid2 = game.Players.LocalPlayer.Character.Humanoid
+	humanoid2.Health = 0
 end)
 
 local script = Instance.new('Script', game13)
@@ -302,3 +303,4 @@ local script = Instance.new('Script', game14)
 game14.MouseButton1Click:Connect(function()
 	workspace.Essential.TunnelDoor:Destroy()
 end)
+`
