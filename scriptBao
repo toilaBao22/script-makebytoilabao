@@ -1,4 +1,4 @@
-`print("Make by Tôi là Bảo")
+print("Make by Tôi là Bảo")
 _G.auto1 = false
 local game13 = Instance.new("TextButton")
 local player = game.Players.LocalPlayer
