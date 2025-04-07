@@ -303,4 +303,3 @@ local script = Instance.new('Script', game14)
 game14.MouseButton1Click:Connect(function()
 	workspace.Essential.TunnelDoor:Destroy()
 end)
-`
