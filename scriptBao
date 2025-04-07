@@ -259,29 +259,21 @@ local script = Instance.new('Script', game11)
 local game11 = script.Parent
 game11.MouseButton1Click:Connect(function()
 
-		_G.auto1 = not _G.auto1
-		workspace.Chest.CanCollide = true
-		if _G.auto1 then
-			workspace.Chest.CanCollide = not workspace.Chest.CanCollide 
-		end
+	_G.auto1 = not _G.auto1
 	local function moveToChest()
 		local humanoidrootpart1 = player.Character:WaitForChild("HumanoidRootPart")
-		humanoidrootpart1.CFrame = workspace._Chest1:GetChildren()[2].CFrame
+		local humanoid1 = player.Character:WaitForChild("Humanoid")
+		humanoidrootpart1.CFrame = workspace.Chest.CFrame
+		humanoid1:MoveTo(workspace.Chest.Position)
 	end
-	player.CharacterAdded:Connect(function(character)
-		local humanoidrootpart1 = character:WaitForChild("HumanoidRootPart")
+	if player.Character then
 		while _G.auto1 do
 			moveToChest()
-			wait(4)
-		end
-	end)
-		if player.Character then
-		while _G.auto1 do
-			moveToChest()
-			wait(4)
+			wait(1)
 		end
 	end
-	end)
+
+end)
 local script = Instance.new('Script', game12)
 local game12 = script.Parent
 game12.MouseButton1Click:Connect(function()
